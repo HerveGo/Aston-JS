@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    background-color: lightgrey;
+}
+
+@font-face {
+    font-family: "pony";
+    src: url("../fonts/pony.ttf");
+}
