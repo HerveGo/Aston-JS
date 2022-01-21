@@ -1,0 +1,36 @@
+.navigate {
+    width: 60%;
+    margin: auto;
+    background-color: #ccc;
+}
+
+#result {
+    height: 60px;
+    text-align: center;
+}
+
+#number {
+    font-size: 3em;
+    width: 50%;
+    margin: auto;
+    border: solid;
+    text-align: center;
+}
+
+.buttons-container {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.button {
+    margin : 8px;
+    padding: 8px;
+    width: 33%;
+    font-size: 2em;
+    border:transparent;
+    color: white;
+    background-color: #0275d8;
+    border-radius: 15px;
+}
