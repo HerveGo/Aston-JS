@@ -1,0 +1,20 @@
+@font-face {
+    font-family: digit;
+    src: url("../fonts/digit.ttf");
+}
+
+.clock-container {
+    display:flex;
+    height: 80vh;
+}
+
+.clock {
+    background-color: #222;
+    color: #66FF66;
+    font-family: digit, console, sans-serif;
+    font-size: 10em;
+    margin: auto;
+    padding: 16px;
+    vertical-align: middle;
+    border-radius: 16px;
+}
