@@ -6,7 +6,7 @@
 }
 
 html, body {
-    background-color: lightgrey;
+    background-color: #FFDFD3;
 }
 
 /* Starts at the height of the navbar + 8px */
@@ -21,20 +21,50 @@ html, body {
 
 .list-card {
     flex: 1;
-    background-color: #aaa;
+    padding:8px;
+    display: flex;
+    flex-direction: column;
+    color: #533276;
+    background-color: #FEC8D8;
     margin: 8px;
+    border-radius: 16px;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.2);
 }
 
 .list-title {
     display: block;
     text-align: center;
+    font-size: 1.3em;
+    font-weight: 600;
     margin-bottom: 8px;
     border-bottom: 2px solid;
-    
-    font-size: 1.2em;
+}
+
+.list-description {
+    display: block;
+    margin-bottom: 8px;
+    text-align: justify;
 }
 
 .list-button {
-    
+    font-size: 1.2em;
+    color:white;
+    background-color: #957DAD;
+    border:none;
+    padding: 8px;
+    width: 50%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom: 8px;
     margin-top: auto;
+    cursor: pointer;
+    transition:all 0.3s ease-in;
+}
+
+.list-button:hover {
+    filter: drop-shadow(3px 3px 0px rgba(0,0,0,0.3));
+}
+
+.list-button:active {
+    transform:translate(5px,5px);
 }

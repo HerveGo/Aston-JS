@@ -1,7 +1,7 @@
 .navigate {
     width: 60%;
     margin: auto;
-    background-color: #ccc;
+    background-color: #FEC8D8;
 }
 
 #result {
@@ -31,6 +31,16 @@
     font-size: 2em;
     border:transparent;
     color: white;
-    background-color: #0275d8;
+    background-color: #D291BC;
     border-radius: 15px;
+    cursor: pointer;
+    transition:all 0.3s ease-in;
+}
+
+.button:hover {
+    filter: drop-shadow(3px 3px 0px rgba(0,0,0,0.3));
+}
+
+.button:active {
+    transform:translate(5px,5px);
 }

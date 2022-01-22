@@ -12,16 +12,20 @@
     top: 0;
     left: 0;
     
-    background-color: rosybrown;
+    background-color: #957DAD;
 }
 
 .navbar a {
     margin: auto;
     text-align: center;
-    color: black;
+    color: #533276;
     text-decoration: none;
     cursor: pointer;
     transition: all 0.3s ease-in;
+}
+
+.navbar a i {
+    color:#FEC8D8;
 }
 
 .navbar a:hover {
@@ -32,6 +36,6 @@
 .navactive {
     margin: auto;
     text-align: center;
-    color: #555;
-    cursor: no-drop;
+    color: #E3F4AB;
+    cursor:default;
 }
