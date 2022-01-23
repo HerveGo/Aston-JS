@@ -15,7 +15,7 @@ class Pony {
      * @returns full path of the image.
      */
     imagePath() {
-        return "../img/" + this.image;
+        return "./img/" + this.image;
     }
 }
 
