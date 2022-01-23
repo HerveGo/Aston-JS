@@ -27,10 +27,10 @@ function fillArray(arr, upperLimit) {
 }
 
 /**
- * Teste chaque élément d'un tableau par FizzBuzz.
- * L'affichage se fait par lignes de 5 éléments.
- * @param {number[]} arr un tableau d'entier à tester
- * @returns HTMLDivElement le div à afficher
+ * Test every array element with FizzBuzz rules.
+ * Creates rows of 5 elements.
+ * @param {number[]} arr an array of integers.
+ * @returns HTMLDivElement the div to be displayed.
  */
 function displayArray(arr) {
     let div = document.createElement("div");
@@ -45,7 +45,7 @@ function displayArray(arr) {
             } else {
                 elem.classList.add("odd");
             }
-            //Teste FizzBuzz
+            //FizzBuzz test
             elem.innerText = arr[i] + " : " + fizzBuzz(arr[i]);
 
             row.appendChild(elem);

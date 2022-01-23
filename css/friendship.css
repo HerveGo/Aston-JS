@@ -1,0 +1,47 @@
+.flex-grid-poney {
+    color:white;
+    display: flex;
+    flex-direction: row;
+    width:70%;
+    margin:auto;
+}
+
+.poney-card {
+    flex: 1;
+    padding:8px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-image: linear-gradient(to right, #FB9BB8, #957DAD);
+    margin: 8px;
+    border-radius: 16px;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.2);
+}
+
+.poney-title {
+    display: block;
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: 600;
+    margin-bottom: 8px;
+    border-bottom: 2px solid;
+}
+
+.poney-description {
+    display: block;
+    margin-bottom: 8px;
+    text-align: justify;
+}
+
+.poney-img {
+    width:90%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 8px;
+}
+
+.poney-a {
+    text-align: center;
+    text-decoration: none;
+}

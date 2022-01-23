@@ -20,36 +20,38 @@ function main() {
  */
 function createCards(exo) {
     const div = document.createElement("div");
-    exo.forEach( (description,title) => {
-        //card element
-        const flexgrid = document.createElement("div");
-        div.setAttribute("class","flex-grid");
-            const card = document.createElement("div");
-            card.setAttribute("class","list-card");
-            //will have a span title
-            const spanTitle = document.createElement("span");
-            spanTitle.setAttribute("class","list-title");
-            spanTitle.innerText = title;
-            card.appendChild(spanTitle);
-            //followed by the description
-            const spanDescription = document.createElement("span");
-            spanDescription.setAttribute("class","list-description");
-            spanDescription.innerHTML = description;
-            card.appendChild(spanDescription);
-            //and a button to go to the html
-            const button = document.createElement("button");
-            button.setAttribute("class","list-button");
-            button.innerText = title;
-            button.addEventListener("click", () => navigateTo(title) );
-            card.appendChild(button);
+    div.setAttribute("class","flex-grid");
+    exo.forEach( (description, title) => {
+        const card = document.createElement("div");
+        card.setAttribute("class","list-card");
+        //will have a span title
+        const spanTitle = document.createElement("span");
+        spanTitle.setAttribute("class","list-title");
+        spanTitle.innerText = title;
+        card.appendChild(spanTitle);
+        //followed by the description
+        const spanDescription = document.createElement("span");
+        spanDescription.setAttribute("class","list-description");
+        spanDescription.innerHTML = description;
+        card.appendChild(spanDescription);
+        //and a button to go to the html
+        const button = document.createElement("button");
+        button.setAttribute("class","list-button");
+        button.innerText = title;
+        button.addEventListener("click", () => navigateTo(title) );
+        card.appendChild(button);
 
         div.appendChild(card);
     });
     return div;
 }
 
-function navigateTo(url) {
-    switch (url) {
+/**
+ * Go to the correct url from the title of the exercise.
+ * @param {string} title 
+ */
+function navigateTo(title) {
+    switch (title) {
         case "Friendship is Magic":
             window.location.href = "friendship.html";
             break;

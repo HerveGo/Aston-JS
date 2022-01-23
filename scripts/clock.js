@@ -13,6 +13,10 @@ function main() {
     setInterval(() => updateClock(clock), 1000);
 }
 
+/**
+ * Creates the clock container, and the clock display.
+ * @returns HTMLDivElement the div containing the clock
+ */
 function createClock() {
     const div = document.createElement("div");
     div.setAttribute("class", "clock-container");
@@ -24,13 +28,17 @@ function createClock() {
     return div;
 }
 
+/**
+ * Updates the clock inner text.
+ * @param {HTMLDivElement} clock the div containing the clock
+ */
 function updateClock(clock) {
     let now = new Date();
     clock.innerText = `${twoDigits(now.getHours())}:${twoDigits(now.getMinutes())}:${twoDigits(now.getSeconds())}`;
 }
 
 /**
- * Convert a number in a fixed 2 digits string
+ * Convert a number in a fixed 2 digits string.
  * @param {number} n an integer between 0 and 99
  * @returns a string with two digits
  */
