@@ -47,7 +47,7 @@ function navElement(value, key, currentPath) {
         navElem.href = key;
     }
     navElem.title = value.title;
-    navElem.innerHTML = `<i class="fas ${value.icon}"></i> ${value.text}`;
+    navElem.innerHTML = `<i class="fas ${value.icon}"></i> <span class="xs-hide">${value.text}</span>`;
     return navElem;
 }
 

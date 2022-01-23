@@ -1,4 +1,4 @@
-.flex-grid-poney {
+.flex-grid-pony {
     color:white;
     display: flex;
     flex-direction: row;
@@ -6,7 +6,7 @@
     margin:auto;
 }
 
-.poney-card {
+.pony-card {
     flex: 1;
     padding:8px;
     display: flex;
@@ -18,7 +18,8 @@
     box-shadow: 4px 4px 10px rgba(0,0,0,0.2);
 }
 
-.poney-title {
+.pony-title {
+    font-family: pony;
     display: block;
     text-align: center;
     font-size: 1.3em;
@@ -27,13 +28,13 @@
     border-bottom: 2px solid;
 }
 
-.poney-description {
+.pony-description {
     display: block;
     margin-bottom: 8px;
     text-align: justify;
 }
 
-.poney-img {
+.pony-img {
     width:90%;
     height: auto;
     margin-left: auto;
@@ -41,7 +42,21 @@
     margin-bottom: 8px;
 }
 
-.poney-a {
+.pony-a {
     text-align: center;
     text-decoration: none;
 }
+
+@media only screen and (max-width: 768px) {
+    .flex-grid-pony {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .flex-grid-pony {
+        width: 100%;
+        flex-direction: column;
+    }
+}
+

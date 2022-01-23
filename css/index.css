@@ -68,3 +68,23 @@ html, body {
 .list-button:active {
     transform:translate(5px,5px);
 }
+
+@media only screen and (max-width: 576px) {
+    .xs-hide {
+        display: none;
+    }
+    .flex-grid {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .xs-hide {
+        display: none;
+    }
+    .flex-grid {
+        width: 90%;
+        margin:auto;
+        flex-direction: column;
+    }
+}

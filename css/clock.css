@@ -5,7 +5,7 @@
 
 .clock-container {
     display:flex;
-    height: 80vh;
+    height: 85vh;
 }
 
 .clock {
@@ -18,3 +18,17 @@
     vertical-align: middle;
     border-radius: 16px;
 }
+
+@media only screen and (max-width: 768px) {
+    .clock{
+        font-size: 8em;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .clock{
+        font-size: 5em;
+    }
+}
+
+
